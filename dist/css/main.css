@@ -26,11 +26,19 @@ h1, h2, h3 {
   margin: 0;
   font-weight: 400; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 6rem; }
+    position: relative;
+    font-size: 6rem;
+    animation-name: lg-heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    position: relative;
     margin-bottom: 2rem;
     padding: 0.2rem;
-    background: rgba(71, 71, 71, 0.15); }
+    background: rgba(71, 71, 71, 0.15);
+    animation: sm-heading;
+    animation-duration: 4s;
+    animation-fill-mode: forwards; }
 
 a {
   color: #fff;
@@ -58,3 +66,26 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+    main#home a {
+      position: relative;
+      animation-name: icons;
+      animation-duration: 4s;
+      animation-fill-mode: forwards; }
+
+@keyframes lg-heading {
+  0% {
+    top: -1000px; }
+  100% {
+    top: 0; } }
+
+@keyframes sm-heading {
+  0% {
+    left: -1000px; }
+  100% {
+    left: 0; } }
+
+@keyframes icons {
+  0% {
+    left: -1000px; }
+  100% {
+    left: 0; } }
