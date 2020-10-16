@@ -69,7 +69,7 @@ main {
         padding: 0.4rem;
         &:hover {
             color: $secondary-color;
-            @include easeout;
+            @include easeOut;
         }
 
     }
